@@ -9,6 +9,12 @@ module.exports = {
                     dark: "hsl(0, 0%, 41%)",
                 },
             },
+            backgroundSize: {
+                "full-auto": "100% auto",
+            },
+            letterSpacing: {
+                button: "0.5em",
+            },
         },
     },
     variants: {
