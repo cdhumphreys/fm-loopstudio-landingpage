@@ -1,4 +1,6 @@
 import React from "react";
+import Proptypes from "prop-types";
+
 import { FaInstagram, FaFacebookSquare, FaTwitter, FaPinterest } from "react-icons/fa";
 const SocialButton = ({ size = "sm", network = "" }) => {
     let iconSize = 12;
@@ -23,19 +25,19 @@ const SocialButton = ({ size = "sm", network = "" }) => {
     const PINTEREST = "pinterest";
 
     let icon;
-    const props = { color: "white", size: iconSize };
+    const commonProps = { color: "white", size: iconSize };
     switch (network.toLowerCase()) {
         case FACEBOOK:
-            icon = <FaFacebookSquare {...props} />;
+            icon = <FaFacebookSquare {...commonProps} />;
             break;
         case TWITTER:
-            icon = <FaTwitter {...props} />;
+            icon = <FaTwitter {...commonProps} />;
             break;
         case INSTAGRAM:
-            icon = <FaInstagram {...props} />;
+            icon = <FaInstagram {...commonProps} />;
             break;
         case PINTEREST:
-            icon = <FaPinterest {...props} />;
+            icon = <FaPinterest {...commonProps} />;
             break;
 
         default:
@@ -43,6 +45,11 @@ const SocialButton = ({ size = "sm", network = "" }) => {
     }
 
     return icon;
+};
+
+SocialButton.propTypes = {
+    size: Proptypes.oneOf(["sm", "md", "lg"]),
+    network: Proptypes.oneOf(["facebook", "twitter", "instagram", "pinterest"]),
 };
 
 export default SocialButton;

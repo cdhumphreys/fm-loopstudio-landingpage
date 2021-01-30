@@ -1,5 +1,5 @@
 import React from "react";
-
+import Proptypes from "prop-types";
 const Button = ({ children, size = "md", className = "", ...props }) => {
     let padding = "px-8 py-4";
 
@@ -26,4 +26,9 @@ const Button = ({ children, size = "md", className = "", ...props }) => {
     );
 };
 
+Button.propTypes = {
+    children: Proptypes.node,
+    size: Proptypes.oneOf(["sm", "md", "lg"]),
+    className: Proptypes.string,
+};
 export default Button;
