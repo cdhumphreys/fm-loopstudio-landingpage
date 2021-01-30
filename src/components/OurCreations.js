@@ -42,8 +42,8 @@ const OurCreations = () => {
                 </Button>
             </div>
 
-            <div className="flex flex-row flex-wrap justify-center items-center mb-20">
-                <div className="grid gap-8 grid-cols-1 md:grid-cols-4 mt-8 mb-10">
+            <div className="flex flex-row flex-wrap justify-center items-center mb-20 w-full">
+                <div className="grid gap-8 grid-cols-1 md:grid-cols-4 mt-8 mb-10 mx-auto">
                     {allImages.map((image) => {
                         const src = useDesktopImages ? image.desktopSrc : image.mobileSrc;
                         return <CreationPreview key={image.alt} src={src} alt={image.alt} />;
