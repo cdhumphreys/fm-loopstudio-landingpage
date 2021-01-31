@@ -44,7 +44,12 @@ const SocialButton = ({ size = "sm", network = "" }) => {
             break;
     }
 
-    return icon;
+    return (
+        <div className="relative group">
+            {icon}
+            <div className="bg-white opacity-0 absolute left-0.5 right-0.5 -bottom-3 h-1 group-hover:opacity-100 z-10" />
+        </div>
+    );
 };
 
 SocialButton.propTypes = {

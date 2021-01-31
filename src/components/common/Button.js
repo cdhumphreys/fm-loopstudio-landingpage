@@ -18,7 +18,7 @@ const Button = ({ children, size = "md", className = "", ...props }) => {
     }
     return (
         <button
-            className={` text-black border-2 border-gray-dark ${padding} uppercase tracking-button ${className}`}
+            className={` text-black border-2 border-gray-dark ${padding} uppercase tracking-button hover:bg-black hover:text-white ${className}`}
             {...props}
         >
             {children}
