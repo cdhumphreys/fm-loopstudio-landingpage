@@ -21,7 +21,7 @@ const Hero = () => {
             ></div>
             <Nav />
             <Container className="h-full justify-center items-center md:justify-start">
-                <h1 className="relative text-4xl md:text-5xl z-10 text-white border-2 border-white uppercase py-8 px-6 md:pl-6 mb-14 max-w-sm md:max-w-md -mt-40 md:mt-0">
+                <h1 className="relative text-4xl md:text-5xl z-10 text-white border-2 border-white uppercase py-8 px-6 md:pl-6 mb-24 max-w-sm md:max-w-md -mt-40 md:mt-0">
                     Immersive experiences that deliver
                 </h1>
             </Container>
