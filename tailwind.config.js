@@ -15,6 +15,9 @@ module.exports = {
             letterSpacing: {
                 button: "0.5em",
             },
+            fontFamily: {
+                heading: ["Josefin Sans", "sans-serif"],
+            },
         },
     },
     variants: {
